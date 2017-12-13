@@ -12,26 +12,28 @@ body {
 
 .sun {
   background: #f1c40f;
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
   border-radius: 50%;
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -250px;
-  margin-left: -250px;
+  margin-top: -300px;
+  margin-left: -300px;
+  z-index: 2;
   animation: sunColor 20s infinite linear;
 }
 
 .earth {
   background: #42aaf4;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   position: fixed;
-  left: 50%;
-  margin-top: 30px;
-  margin-left: -50px;
+  left: 10%;
+  top: 50%;
+  margin-top: -60px;
+  z-index: 3;
   animation: earthColor 10s infinite linear;
 
 }
@@ -44,7 +46,7 @@ body {
     background: #42e5f4;
   }
   50%{
-    background: #41f488;
+    background: #41f488 ;
   }
   75%{
     background: #42e5f4;
