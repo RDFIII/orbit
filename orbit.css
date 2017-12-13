@@ -20,6 +20,7 @@ body {
   left: 50%;
   margin-top: -250px;
   margin-left: -250px;
+  animation: sunColor 20s infinite linear;
 }
 
 .earth {
@@ -27,15 +28,12 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  position: fixed;
+  left: 50%;
+  margin-top: 30px;
+  margin-left: -50px;
   animation: earthColor 10s infinite linear;
-  /*animation-name: earthColor;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-name: earthOrbit;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;*/
+
 }
 
 @keyframes earthColor {
@@ -46,7 +44,7 @@ body {
     background: #42e5f4;
   }
   50%{
-    background: #41f48b;
+    background: #41f488;
   }
   75%{
     background: #42e5f4;
@@ -56,9 +54,27 @@ body {
   }
 }
 
+@keyframes sunColor {
+  0%{
+    background: #f1c40f;
+  }
+  25%{
+    background: #f4be41;
+  }
+  50%{
+    background: #f49741;
+  }
+  75%{
+    background: #f4be41;
+  }
+  100%{
+    background: #f1c40f;
+  }
+}
+
 @keyframes earthOrbit {
   0%{
-    transform: translate(50%, 0);
+
   }
   10%{
 
